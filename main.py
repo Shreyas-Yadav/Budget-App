@@ -1,4 +1,4 @@
-
+import os
 class Category:
     
     """
@@ -40,7 +40,7 @@ class Category:
         self.amount = 0
         self.ledger = []
 
-        
+
     def __str__(self):
         result = ''
 
@@ -215,5 +215,7 @@ clothing.withdraw(25,'t-shirts')
 auto.deposit(500)
 auto.withdraw(80, 'bike washer')
 
+# print(create_spend_chart(categories))
+
 categories = [food,clothing,auto]
-print(create_spend_chart(categories))
+
